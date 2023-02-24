@@ -10,9 +10,9 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
+        'i18next',
     ],
     rules: {
-
         quotes: [2, 'single'],
         indent: [2, 4],
         'semi': [2, 'always'],
@@ -30,6 +30,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies':'off',
+        'import/no-extraneous-dependencies': 'off',
+        'i18next/no-literal-string': ['error',{ markupOnly: true }],
     },
 };
